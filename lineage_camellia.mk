@@ -16,7 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some Rising flags
 RISING_CHIPSET := MT6833
-RISING_MAINTAINER := diksy9
+RISING_MAINTAINER := dikiawan9
 RISING_PACKAGE_TYPE := VANILLA AOSP
 TARGET_ENABLE_BLUR := false
 INLINE_KERNEL_BUILDING := true
