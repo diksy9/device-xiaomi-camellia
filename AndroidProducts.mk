@@ -9,5 +9,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     afterlife_camellia-user \
-    afterlife-userdebug \
+    afterlife_camellia-userdebug \
     afterlife_camellia-eng
