@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/camellia/device.mk)
 
 # Inherit some common risingOS.
-$(call inherit-product, vendor/rising/config/common_full_phone.mk)
+$(call inherit-product, vendor/rising/config/rising.mk)
 
 # Inherit some Rising flags
 RISING_CHIPSET := MT6833
@@ -20,7 +20,7 @@ RISING_MAINTAINER := diksy9
 RISING_PACKAGE_TYPE := VANILLA AOSP
 TARGET_ENABLE_BLUR := false
 INLINE_KERNEL_BUILDING := true
-TARGET_CORE_GMS := true
+TARGET_CORE_GMS := false
 TARGET_USE_GOOGLE_TELEPHONY := false
 TARGET_CORE_GMS_EXTRAS := false
 TARGET_PREBUILT_PIXEL_LAUNCHER := false
