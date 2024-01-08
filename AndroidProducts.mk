@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_camellia.mk
+    $(LOCAL_DIR)/lineage_camellia.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_camellia-user \
-    rising_camellia-userdebug \
-    rising_camellia-eng
+    lineage_camellia-user \
+    lineage_camellia-userdebug \
+    lineage_camellia-eng
