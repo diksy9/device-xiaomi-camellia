@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/camellia/device.mk)
 
-# Inherit some common risingOS.
-$(call inherit-product, vendor/rising/config/rising.mk)
+# Inherit some common Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some Rising flags
 RISING_CHIPSET := MT6833
@@ -30,7 +30,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := rising_camellia
+PRODUCT_NAME := lineage_camellia
 PRODUCT_DEVICE := camellia
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
