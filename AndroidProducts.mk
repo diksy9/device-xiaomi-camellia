@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/afterlife_camellia.mk
+    $(LOCAL_DIR)/rising_camellia.mk
 
 COMMON_LUNCH_CHOICES := \
-    afterlife_camellia-user \
-    afterlife_camellia-userdebug \
-    afterlife_camellia-eng
+    rising_camellia-user \
+    rising_camellia-userdebug \
+    rising_camellia-eng

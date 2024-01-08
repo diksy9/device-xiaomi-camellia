@@ -11,21 +11,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/camellia/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
+# Inherit some common risingOS.
+$(call inherit-product, vendor/rising/config/common_full_phone.mk)
 
-# AfterLife flags
-AFTERLIFE_GAPPS := false
-AFTERLIFE_MAINTAINER := diksy9
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_BLUR := true
-USE_PIXEL_CHARGING := true
+# Inherit some Rising flags
+RISING_CHIPSET := MT6833
+RISING_MAINTAINER := diksy9
+RISING_PACKAGE_TYPE := VANILLA AOSP
+TARGET_ENABLE_BLUR := false
+INLINE_KERNEL_BUILDING := true
+TARGET_CORE_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_CORE_GMS_EXTRAS := false
+TARGET_PREBUILT_PIXEL_LAUNCHER := false
+TARGET_ENABLE_PIXEL_FEATURES := true
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := afterlife_camellia
+PRODUCT_NAME := rising_camellia
 PRODUCT_DEVICE := camellia
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
